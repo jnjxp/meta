@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f429664ac56169e5ec0e39baa6dd03ab",
+    "hash": "789d160f66b874c5e4a83e4ff5ac3ec2",
     "packages": [
         {
             "name": "aura/html",
@@ -115,41 +115,50 @@
             "time": "2014-12-19 18:02:33"
         },
         {
-            "name": "jnj/php-support",
-            "version": "dev-master",
+            "name": "jnjxp/support",
+            "version": "v0.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jakejohns/php-support.git",
-                "reference": "9cd32c6253b98017daf31eba35a2fc4038a460a1"
+                "url": "https://github.com/jnjxp/support.git",
+                "reference": "d10b4eea0d8e19c9c677702703c3e64c3c91a65f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jnjxp/support/zipball/d10b4eea0d8e19c9c677702703c3e64c3c91a65f",
+                "reference": "d10b4eea0d8e19c9c677702703c3e64c3c91a65f",
+                "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Jnj\\Support\\": "src/",
-                    "Jnj\\Support\\_Config\\": "config/"
+                    "Jnjxp\\Support\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0"
+            ],
             "authors": [
                 {
                     "name": "jake johns",
                     "email": "jake@jakejohns.net"
                 }
             ],
-            "description": "support for php stuff",
-            "time": "2015-01-05 02:31:18"
+            "description": "Generic contracts, traits, interfaces, etc",
+            "time": "2015-01-17 01:42:59"
         },
         {
             "name": "patchwork/utf8",
-            "version": "v1.1.26",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tchwork/utf8.git",
-                "reference": "6b8e46603b49ee87ad6bceb314da94cc04ffcdce"
+                "reference": "9639d28f1aa24add93ca7a0cf2a5cc3169ddb7d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tchwork/utf8/zipball/6b8e46603b49ee87ad6bceb314da94cc04ffcdce",
-                "reference": "6b8e46603b49ee87ad6bceb314da94cc04ffcdce",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/9639d28f1aa24add93ca7a0cf2a5cc3169ddb7d5",
+                "reference": "9639d28f1aa24add93ca7a0cf2a5cc3169ddb7d5",
                 "shasum": ""
             },
             "require": {
@@ -159,12 +168,13 @@
             "suggest": {
                 "ext-iconv": "Use iconv for best performance",
                 "ext-intl": "Use Intl for best performance",
-                "ext-mbstring": "Use Mbstring for best performance"
+                "ext-mbstring": "Use Mbstring for best performance",
+                "ext-wfio": "Use WFIO for UTF-8 filesystem access on Windows"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -192,17 +202,17 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2014-11-08 10:13:25"
+            "time": "2015-01-12 20:01:53"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "jnj/php-support": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.3.0"
+    },
     "platform-dev": []
 }
