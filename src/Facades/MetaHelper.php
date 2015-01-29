@@ -54,7 +54,7 @@ class MetaHelper extends Facade
     */
     protected static function getFacadeAccessor()
     {
-        return 'jnj/meta:helper';
+        return 'jnjxp/meta:helper';
     }
 
 }
