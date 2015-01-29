@@ -25,7 +25,7 @@
 * @link      http://jakejohns.net
  */
 
-namespace Jnj\HeadMeta\Facades;
+namespace Jnjxp\Meta\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
