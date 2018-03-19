@@ -204,7 +204,7 @@ class Title
     {
         $title = $this->getTitleString();
 
-        $this->auraTitle->setRaw($title);
+        $this->auraTitle->set($title);
 
         if ($this->includeMeta) {
             $this->auraMeta->add($this->getMetaArray($title));
@@ -296,7 +296,7 @@ class Title
             ),
             $sep
         );
-        return $this->escaper->html($raw);
+        return $raw;
     }
 
     /**
